@@ -1,7 +1,7 @@
 let supabaseClient = null;
 function getClient() {
     if (!supabaseClient) {
-        const supabaseUrl = 'db.iscsvjemonojhlxvptvc.supabase.co';
+        const supabaseUrl = 'https://db.iscsvjemonojhlxvptvc.supabase.co';
         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlzY3N2amVtb25vamhseHZwdHZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MDc0OTksImV4cCI6MjA3NjM4MzQ5OX0.GixTbfHBmSvwH3eYP4mtbnCjcUYUbpKwVE966mAYch0';
         supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
     }
