@@ -1,8 +1,8 @@
 let supabaseClient = null;
 function getClient() {
     if (!supabaseClient) {
-        const supabaseUrl = 'SupaBase 项目地址';
-        const supabaseKey = 'SupaBase 匿名密钥';
+        const supabaseUrl = 'https://supabase.com/dashboard/project/iscsvjemonojhlxvptvc';
+        const supabaseKey = 'gary0925';
         supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
     }
     return supabaseClient;
